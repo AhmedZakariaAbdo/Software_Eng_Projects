@@ -1,0 +1,38 @@
+Stone, Paper, Scissors Game in C++
+Project Overview
+
+This project is a console-based implementation of the classic game "Stone, Paper, Scissors" written in C++. The game pits a player against the computer, with the player choosing between Stone, Paper, or Scissors. The computer generates a random choice, and the result of each round is displayed, followed by a summary of the overall game results.
+Features
+
+    Player vs. Computer Gameplay: The player competes against a computer opponent that makes random choices.
+    Game Rounds: Users can choose to play between 1 and 10 rounds.
+    Dynamic Feedback: The game provides immediate feedback for each round, including who won and the computer's choice.
+    Final Results: After the selected number of rounds, a final winner (Player, Computer, or Draw) is declared.
+
+Software Engineering Principles
+
+This project follows key software engineering principles such as:
+
+    Modularity: The game logic is organized into functions that break down tasks into manageable parts. Each function is responsible for a specific part of the game (e.g., getting user input, determining the winner, printing results), ensuring readability and maintainability.
+    Reusability: Functions such as RandomNumber(), ChoiceName(), and WhoWonTheRound() are designed for reuse, demonstrating proper method abstraction. This allows for easy updates and changes to the game logic.
+    Separation of Concerns: By organizing the code into functions like PlayGame(), SetWinnerScreenColor(), and ShowFinalGameResults(), the program separates concerns such as gameplay logic, user interaction, and result display. This improves both the structure and scalability of the code.
+    Efficient User Interface: The game uses console commands like system("color") to provide a simple but effective user experience. Each game outcome is highlighted by changing the console colors to enhance the visual feedback for players.
+
+How It Works
+
+    The player is prompted to select a choice (Stone, Paper, or Scissors).
+    The computer generates a random choice.
+    The program determines the winner of each round and displays the results.
+    After all rounds, the game declares the final winner based on the number of rounds won by each player.
+
+Functionality Breakdown
+
+    RandomNumber(): Generates a random number to simulate the computer's choice.
+    WhoWonTheRound(): Determines the winner of each round by comparing the player's choice to the computer's.
+    PrintRoundResults(): Displays the results of each round, including the choices made and the round winner.
+    PlayGame(): Runs the game logic for a specified number of rounds, keeping track of the score.
+    ShowFinalGameResults(): Displays the final game statistics, including the number of wins, draws, and the overall winner.
+
+Usage
+
+Simply run the main() function to start the game. The user is prompted to choose the number of rounds and play against the computer. After each round, the results are displayed, and the game can be played repeatedly.
