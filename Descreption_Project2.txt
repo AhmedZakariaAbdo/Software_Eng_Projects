@@ -1,0 +1,20 @@
+Math Quiz Game in C++
+
+This project is a simple, interactive math quiz game developed in C++. The game generates random math questions based on the player's selected difficulty level (Easy, Medium, Hard, or Mixed) and the type of mathematical operation (Addition, Subtraction, Multiplication, Division, or Mixed). Players answer these questions and receive instant feedback on whether their answers are correct.
+Key Features:
+
+    Multiple Difficulty Levels: Users can select from four levels: Easy, Medium, Hard, or Mixed, each generating questions with increasing difficulty.
+    Operation Selection: Players choose from addition, subtraction, multiplication, division, or a random mix of operations.
+    Immediate Feedback: After each answer, the game immediately informs the player whether their answer is correct, with a color change and sound to enhance user interaction.
+    Final Results Summary: A comprehensive summary is provided at the end of the game, displaying the number of correct and incorrect answers and whether the player passed or failed.
+
+Software Engineering Principles:
+
+This project applies key principles of software engineering, ensuring the code is clean, modular, and easy to maintain:
+
+    Modular Design: The project is organized into functions and methods, each handling specific tasks like generating questions, reading answers, and processing quiz results. This promotes separation of concerns, making the code easier to understand and maintain.
+    Reusable Functions: Functions like SimpleCalculator(), GenerateQuestion(), and CorrectTheQuestionAnswer() handle core operations, reducing code duplication and enhancing reusability.
+    Enums and Structs: Enums are used to define question difficulty and operation types, making the code more readable. Structs organize related data, such as quiz and question details, simplifying data handling.
+    Error Handling and User Input Validation: Input is validated to ensure that players provide acceptable answers, ensuring a smooth user experience.
+
+By leveraging these principles, the game is both efficient and scalable, adhering to best practices in software development.
