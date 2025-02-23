@@ -19,4 +19,4 @@ Feel free to explore, contribute, or suggest improvements! 😊
 #Contact
 
     GitHub: AhmedZakariaAbdo
-    LinkedIn: Ahmed Zakaria Abdo
+    LinkedIn: https://www.linkedin.com/in/ahmed-zakaria-abdo-a08705191/
