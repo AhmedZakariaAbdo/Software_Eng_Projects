@@ -1,0 +1,110 @@
+Employee Management System
+Overview
+
+This project is a simple Employee Management System built using C++. The program allows users to input and store employee details such as ID, name, salary, and job title, and then print all stored employees' data.
+
+The project follows software engineering principles, including:
+
+    Modular programming (using functions to keep the code organized).
+    Structured data management (using struct to group related employee information).
+    User interaction handling (using cin, getline, and cout).
+
+Features
+
+✅ Input employee data dynamically.
+✅ Store employee records in an array.
+✅ Print all stored employee data.
+✅ Uses functions and procedures to enhance code readability and maintainability.
+Software Engineering Techniques Used
+1️⃣ Structured Data Representation
+
+    The program defines a struct (sEmployee) to encapsulate all employee-related attributes. This helps in organizing related data together, making it easy to manage.
+
+struct sEmployee {
+    int ID;
+    string Name;
+    double salary;
+    string Job_Title;
+};
+
+2️⃣ Modular Programming (Functions & Procedures)
+
+    Each operation (input, output, and processing) is separated into functions, following Single Responsibility Principle (SRP). This makes the code scalable and easier to debug.
+
+Example: Function to fill employee data:
+
+sEmployee FillEmployeeData() {
+    sEmployee EData;
+    cout << "\nEnter Employee ID: ";
+    cin >> EData.ID;
+    cin.ignore();
+    cout << "\nEnter Employee Name: ";
+    getline(cin, EData.Name);
+    cout << "\nEnter Salary: ";
+    cin >> EData.salary;
+    cin.ignore();
+    cout << "\nEnter Job Title: ";
+    getline(cin, EData.Job_Title);
+    return EData;
+}
+
+3️⃣ Data Storage using Arrays
+
+    Instead of using dynamic structures like vector, we use an array to store multiple employee records.
+    This ensures fixed memory allocation and avoids dynamic memory overhead.
+
+sEmployee Arr[100];  // Storing up to 100 employees
+
+4️⃣ Loop-Based Data Processing
+
+    The program loops through the array to store and retrieve data efficiently, demonstrating iteration control structures.
+
+Example: Filling employee data:
+
+void FillEmployees(sEmployee Arr[], short Num) {
+    for (int i = 0; i < Num; i++) {
+        cout << "\nEntering data for Employee " << i + 1 << endl;
+        Arr[i] = FillEmployeeData();
+    }
+}
+
+5️⃣ Encapsulation with a Run Function
+
+    A dedicated RunProgram() function wraps the entire workflow, keeping the main() function clean and minimal.
+
+void RunProgram() {
+    short Num;
+    sEmployee Arr[100];
+
+    cout << "\nHow Many Employees You Want To Enter: ";
+    cin >> Num;
+
+    FillEmployees(Arr, Num);
+    PrintAllEmployees(Arr, Num);
+}
+
+How to Run the Program
+
+    Clone the repository
+
+git clone https://github.com/YourUsername/YourRepoName.git
+
+    Navigate to the project folder
+
+cd YourRepoName
+
+    Compile the program
+
+g++ EmployeeManagement.cpp -o EmployeeManagement
+
+    Run the executable
+
+./EmployeeManagement
+
+Future Enhancements
+
+🔹 Replace arrays with vectors for dynamic memory management.
+🔹 Implement file handling to save and load employee records.
+🔹 Add a search feature to find employees by ID.
+🔹 Use object-oriented programming (OOP) by converting sEmployee into a class.
+
