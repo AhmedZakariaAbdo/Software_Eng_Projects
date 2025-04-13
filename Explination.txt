@@ -1,5 +1,0 @@
-About This Library:
-This is a custom C++ library I created to store reusable functions and keep my code clean and modular.
-It helps me practice real-world software engineering principles such as abstraction, encapsulation, and reusability.
-
-Feel free to explore the functions inside and use them in your own projects!
